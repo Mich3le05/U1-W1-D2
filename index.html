@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile."
+    />
     <style>
       table {
         border: 1px solid black;
@@ -18,22 +22,18 @@
   </head>
   <body>
     <header>
-      <h1>Sviluppo di una pagina web - Blog Epicode</h1>
-      <h2>
-        Primi passi operativi per creare un modello di una pagina HTML per un
-        post. Scopri come iniziare in modo facile.
-      </h2>
-      <img src="./assets/img/logo.svg" alt="logo" width="180px" />
+      <img src="./assets/img/logo.svg" alt="logo" width="250px" height="60" />
       <p>Epicode - Il blog dei developers</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Articoli</a></li>
+        <li><a href="#">Lavora con noi</a></li>
+      </ul>
     </header>
+    <hr />
     <main>
-      <a href="#">Home</a>
-      <a href="#">Articoli</a>
-      <a href="#">Lavora con noi</a>
-      <h2>
-        Come creare un template per i post <br />
-        di Mario Rossi -pubblicato il 25-10-2020
-      </h2>
+      <h2>Come creare un template per i post</h2>
+      <p>di Mario Rossi - pubblicato il 25-10-2020</p>
       <p>
         La prima cosa da fare è suddividere in blocchi logici la pagina,
         identificando le parti comuni da applicare a tutte le pagine
@@ -48,7 +48,7 @@
           Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;
         </li>
       </ul>
-      <p>Formattazione del codice</p>
+      <h2>Formattazione del codice</h2>
       <p>
         Il testo dell'articolo dovrà essere formattato per identificare tutte le
         parti da selezionare con i CSS. Perciò i passi saranno:
@@ -108,8 +108,8 @@
         </tbody>
       </table>
       <p>
-        Un test di validazione potrà essere fatto tramite il tool online
-        <a href="https://www.youtube.com/@EPICODE.Italia">link esterno</a>
+        Un test di validazione potrà essere fatto tramite il
+        <a href="https://www.youtube.com/@EPICODE.Italia">tool online</a>
         dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il
         nostro obiettivo ed essere stati dei veri developers come loro:
       </p>
@@ -128,11 +128,11 @@
         newsletter:
       </p>
       <div>
-        <label for="email-field">Inserisci l'email</label>
+        <label for="email-field"></label>
         <input
           type="email"
           id="email-field"
-          placeholder="mario.ciao@gmail.com"
+          placeholder="Inserisci l'email"
           required
         />
         <button>Iscriviti!</button>
@@ -154,6 +154,7 @@
         </p>
       </aside>
     </main>
+    <hr />
     <footer>
       <p>Blog Epicode &copy;2023</p>
       <p>
